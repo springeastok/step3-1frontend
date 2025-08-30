@@ -52,4 +52,4 @@ jobs:
           app-name: 'app-002-gen10-step3-1-node-oshima56'
           slot-name: 'Production'
           package: .
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_A7E60F2A6AEE4B0E9C4FBC3B106D1CA3 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_470D85F054814E708544FB35D87B4316 }}
