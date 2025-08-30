@@ -38,6 +38,7 @@ jobs:
           mkdir deploy
           cp -r ./.next/standalone/. ./deploy
           cp -r ./.next/static/. ./deploy/.next/static
+          cp -r ./node_modules/. ./deploy/node_modules
 
       - name: Zip artifact for deployment
         run: zip release.zip ./deploy -r #3
@@ -65,4 +66,5 @@ jobs:
           app-name: 'app-002-gen10-step3-1-node-oshima56'
           slot-name: 'Production'
           package: ./deploy
+
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_FCBCEB33B03541A2B89F9D5466377965 }}
